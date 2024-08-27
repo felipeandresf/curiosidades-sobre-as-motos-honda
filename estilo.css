@@ -1,0 +1,88 @@
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        :root {
+            --cor0: #D9D9D9;
+            --cor1: #262626;
+            --cor2: #595859;
+            --cor3: #8C8B8C;
+            --cor4: #0D0C0D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Garante que padding e border não afetem o tamanho total */
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Fallback caso a fonte não carregue */
+        }
+
+        header {
+            background-color: var(--cor1);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: "Rubik Mono One", monospace;
+            font-weight: 300;
+            font-style: normal;
+        }
+        header > h1 {
+            font-size: 1.8em;
+            text-shadow: 14px 4px 5px black;
+        }
+
+        nav {
+            background-color: var(--cor2);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a { 
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav > a:hover{
+            background-color: #FEEBDA;
+            color: #0D0C0D;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+            
+        
+
+        main {
+            padding: 10px;
+            display: flex; /* Utiliza flexbox para alinhar elementos lado a lado */
+            gap: 20px; /* Espaçamento entre os elementos */
+        }
+
+        main > h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+            color: var(--cor1);
+            margin-bottom: 10px;
+        }
+
+        main > p {
+            color: var(--cor4);
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        main > div {
+            background-color: rgba(247, 148, 56, 0.184);
+            padding: 20px;
+            width: 300px; /* Largura da caixa ao lado da imagem */
+            
+        }
+
+        #image1 {
+            max-width: 100%; /* Garante que a imagem não ultrapasse o seu contêiner */
+            height: 300px; /* Altura fixa para todas as imagens */
+            object-fit: cover; /* Faz a imagem cobrir a área definida */
+            margin: 0;
+        }
